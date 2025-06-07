@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSAP | Animated Photo Scroll</title>
+
+  <!-- Google Fonts: Inter -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="smooth-wrapper">
+
+  <!-- ================== HEADER ================== -->
+  <header style="--border-width:0;">
+    <div class="header-inner">
+
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="../index.html">Home</a>
+        <a href="../gallery/gallery.html">Gallery</a>
+        <a href="../story/story.html">Story</a>
+      </nav>
+
+      <!-- Hamburger Icon for Mobile -->
+      <div class="hamburger" onclick="toggleMobileNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileMenu">
+      <a href="../index.html">Home</a>
+        <a href="../gallery/index.html">Gallery</a>
+        <a href="../story/index.html">Story</a>
+    </div>
+  </header>
+
+    <div id="data"
+      data-title="Raja Chola"
+      data-about="Rajaraja I was a powerful Chola emperor who expanded the empire through military conquests and built the iconic Brihadisvara Temple."
+      data-date1="985 CE"
+      data-date2=" 988 CE"
+      data-date3="993 CE"
+      data-high1="Rajaraja I Ascends the Throne"
+	    data-high2="Battle of Kandalur Salai"
+	    data-high3="Conquest of Northern Sri Lanka (Ila-mandalam)"
+	    data-para1="After the death of his brother Aditya II, Rajaraja I becomes king.Marks the beginning of one of the most powerful Chola reigns."
+	    data-para2="Rajaraja destroys the naval base at Kandalur Salai (Kerala).This victory marks the start of Chola naval dominance."
+	    data-para3="Chola forces invade and capture Anuradhapura.Cholas establish Jananatha Mangalam in Polonnaruwa and Rajarajapura in Mantota.">
+  </div>
+
+  <!-- ================== MAIN CONTENT ================== -->
+  <main id="smooth-content">
+
+    <!-- Hero photo Overlay Wrapper -->
+    <div class="hero-photo-wrapper">
+      <img src="./image.png" alt="Crimson Fermentation photo"
+        class="hero-photo" />
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero vintage-hero">
+      <div class="hero-content">
+
+        <!-- Main Heading -->
+        <h1>
+          <span class="line">Raja</span>
+          <span class="line highlight">Raja Chola</span>
+        </h1>
+      </div>
+    </section>
+
+<!-- Introduction Section -->
+<section class="section-intro">
+  <div class="intro-grid">
+
+    <!-- Left Side: Headings and Description -->
+    <div class="intro-left">
+      <p class="small-title">Our Selection</p>
+      <h2 class="main-heading">The Chola Dynasty</h2>
+      <p class="description">
+        Rajaraja I, the illustrious Chola emperor, is remembered for his military conquests, efficient administration, and the monumental Brihadisvara Temple.
+      </p>
+      <a href="#" class="cta-box">Explore All</a>
+    </div>
+
+    <!-- Right Side: contents List -->
+    <div class="intro-right">
+      <div class="contents-log">
+        <h3 class="contents-title">Historical Milestones</h3>
+
+        <!-- Each content -->
+        <div class="content">
+          <div class="content-qty">985 CE</div>
+          <div class="content-text">
+            <strong>Rajaraja I Ascends the Throne</strong>
+            <p>After the death of his brother Aditya II, Rajaraja I becomes king. Marks the beginning of one of the most powerful Chola reigns.</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content-qty">988 CE</div>
+          <div class="content-text">
+            <strong>Battle of Kandalur Salai</strong>
+            <p>Rajaraja destroys the naval base at Kandalur Salai (Kerala). This victory marks the start of Chola naval dominance.</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content-qty">993 CE</div>
+          <div class="content-text">
+            <strong>Conquest of Northern Sri Lanka (Ila-mandalam)</strong>
+            <p>Chola forces invade and capture Anuradhapura. Cholas establish Jananatha Mangalam in Polonnaruwa and Rajarajapura in Mantota.</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="date3" class="content-qty">1010 CE</div>
+          <div class="content-text">
+            <strong>Construction of Brihadisvara Temple</strong>
+            <p>A remarkable feat of architecture built in Thanjavur, symbolizing the zenith of Chola artistic and political power.</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content-qty">1014 CE</div>
+          <div class="content-text">
+            <strong>Legacy Continues</strong>
+            <p id="para3">Rajaraja I's reign ends, succeeded by Rajendra Chola I, continuing the empire's golden age and further expansion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Timeline Section -->
+<section class="timeline-section">
+  <h2 class="timeline-main-title">Our Timeline</h2>
+
+  <!-- First Timeline Entry -->
+  <div class="timeline-entry">
+    <!-- Left Column: Date + Image -->
+    <div class="timeline-left">
+      <div class="timeline-date">985 CE</div>
+      <img src="img/1.jpg" class="timeline-img" />
+    </div>
+
+    <!-- Right Column: Story -->
+    <div class="timeline-right">
+      <h3 class="timeline-title">Rajaraja I Becomes King</h3>
+      <p class="timeline-description">
+        Following the death of Aditya II, Rajaraja I ascends the Chola throne, laying the foundation for a transformative era in South Indian history.
+      </p>
+    </div>
+  </div>
+
+  <!-- Second Timeline Entry -->
+  <div class="timeline-entry">
+    <div class="timeline-left">
+      <div class="timeline-date">988 CE</div>
+      <img src="img/2.jpg" class="timeline-img" />
+    </div>
+
+    <div class="timeline-right">
+      <h3 class="timeline-title">Victory at Kandalur Salai</h3>
+      <p class="timeline-description">
+        The Chola navy destroys the naval base at Kandalur Salai, asserting dominance over the western sea routes and coastal powers.
+      </p>
+    </div>
+  </div>
+
+  <!-- Third Timeline Entry -->
+  <div class="timeline-entry">
+    <div class="timeline-left">
+      <div class="timeline-date">993 CE</div>
+      <img src="img/3.jpg" class="timeline-img" />
+    </div>
+
+    <div class="timeline-right">
+      <h3 class="timeline-title">Northern Sri Lanka Conquered</h3>
+      <p class="timeline-description">
+        Chola armies invade and capture Anuradhapura, expanding influence across the Palk Strait and establishing strategic towns.
+      </p>
+    </div>
+  </div>
+
+  <!-- Fourth Timeline Entry -->
+  <div class="timeline-entry">
+    <div class="timeline-left">
+      <div class="timeline-date">1010 CE</div>
+      <img src="img/4.jpg" class="timeline-img" />
+    </div>
+
+    <div class="timeline-right">
+      <h3 class="timeline-title">Brihadisvara Temple Completed</h3>
+      <p class="timeline-description">
+        The magnificent Brihadisvara Temple at Thanjavur is completed, showcasing Chola architectural brilliance and Rajaraja’s devotion to Shaivism.
+      </p>
+    </div>
+  </div>
+
+  <!-- Fifth Timeline Entry -->
+  <div class="timeline-entry">
+    <div class="timeline-left">
+      <div class="timeline-date">1014 CE</div>
+      <img src="img/5.jpg" class="timeline-img" />
+    </div>
+
+    <div class="timeline-right">
+      <h3 class="timeline-title">End of an Era</h3>
+      <p class="timeline-description">
+        Rajaraja I passes away, leaving behind a powerful and culturally rich empire. His son, Rajendra Chola I, carries forward the legacy.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sixth Timeline Entry -->
+<div class="timeline-entry">
+  <div class="timeline-left">
+    <div class="timeline-date">997 CE</div>
+    <img src="img/6.jpg" class="timeline-img" />
+  </div>
+
+  <div class="timeline-right">
+    <h3 class="timeline-title">Southern Conquests Begin</h3>
+    <p class="timeline-description">
+      Rajaraja I launches successful campaigns against the Pandyas and Cheras, consolidating Chola authority in southern India.
+    </p>
+  </div>
+</div>
+
+<!-- Seventh Timeline Entry -->
+<div class="timeline-entry">
+  <div class="timeline-left">
+    <div class="timeline-date">999 CE</div>
+    <img src="img/7.jpg" class="timeline-img" />
+  </div>
+
+  <div class="timeline-right">
+    <h3 class="timeline-title">Western Ganga Defeated</h3>
+    <p class="timeline-description">
+      The Chola army defeats the Western Ganga dynasty in Gangavadi, expanding influence into modern-day Karnataka.
+    </p>
+  </div>
+</div>
+
+<!-- Eighth Timeline Entry -->
+<div class="timeline-entry">
+  <div class="timeline-left">
+    <div class="timeline-date">1003 CE</div>
+    <img src="img/8.jpg" class="timeline-img" />
+  </div>
+
+  <div class="timeline-right">
+    <h3 class="timeline-title">Naval Campaigns Intensify</h3>
+    <p class="timeline-description">
+      Rajaraja I strengthens the Chola navy and begins overseas expeditions, preparing for expansion across Southeast Asia.
+    </p>
+  </div>
+</div>
+
+<!-- Ninth Timeline Entry -->
+<div class="timeline-entry">
+  <div class="timeline-left">
+    <div class="timeline-date">1007 CE</div>
+    <img src="img/9.jpg" class="timeline-img" />
+  </div>
+
+  <div class="timeline-right">
+    <h3 class="timeline-title">Tamil Saiva Revival</h3>
+    <p class="timeline-description">
+      Rajaraja recovers and preserves ancient Tamil Saiva texts from decaying palm manuscripts, supporting temple culture and literature.
+    </p>
+  </div>
+</div>
+
+
+
+</section>
+
+
+
+	
+  </main>
+
+  <!-- ================== JAVASCRIPT ================== -->
+
+  <!-- GSAP Core Library -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Main Script -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
